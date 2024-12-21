@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.sliders {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Empile le titre et le contenu verticalement */
+    align-items: center; /* Centre le titre horizontalement */
+    justify-content: center; /* Centre verticalement les enfants */
+    color: #fff;
+    scroll-snap-align: start;
+    gap: 20px; /* Espace entre le titre et le contenu */
+}
+
+.sliders img{
+    width: 350px
+}
+
+
+.content {
+    display: flex; /* Utilise Flexbox pour aligner les images à gauche et le texte à droite */
+    justify-content: space-between; /* Sépare les images et le texte */
+    align-items: flex-start; /* Aligne les éléments en haut */
+    width: 100%; /* Prend toute la largeur disponible */
+    gap: 20px; /* Espace entre les colonnes */
+}
+
+
+.images-container {
+    display: grid; /* Organise les images en grille */
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes */
+    grid-gap: 20px; /* Espace entre les images */
+    flex: 0 0 auto; /* Force la largeur à s'ajuster au contenu */
+    margin-left: 20px; /* Optionnel : ajoute un léger retrait par rapport au bord gauche */
+}
+
+
+.text-container {
+    width: 30%; /* Fixe la largeur de la zone de texte */
+    align-self: flex-start; /* Positionne le texte en haut à droite */
+    padding: 20px; /* Ajoute un peu d'espace autour du texte */
+    background: rgba(255, 255, 255, 0.1); /* Fond semi-transparent (optionnel) */
+    border-radius: 10px; /* Arrondit les bords du conteneur de texte */
+    text-align: left; /* Aligne le texte à gauche */
+    margin-right: 100px; /* Ajoute un espace entre le texte et le bord droit */
+}
+
+
+
+.sliders h2 {
+    font-size: 70px;
+    font-weight: 600;
+    max-width: 650px;
+    text-align: center; /* Centre le texte du titre */
+    margin: 0; /* Supprime les marges par défaut */
+}
+
+
+
+.slide1{
+    background: linear-gradient(454deg, #4f4080, #9553ff)
+}
+
+.slide2{
+    background: linear-gradient(454deg, #83a000, #0e5ae7)
+}
+
+.slide3{
+    background: linear-gradient(454deg, #000000, #181818)
+}
