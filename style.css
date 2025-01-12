@@ -116,6 +116,21 @@
     margin-left: 0; /* Supprime tout espace inutile à gauche */
 }
 
+.slide6 .content {
+    flex-direction: row-reverse; /* Change l'ordre des colonnes */
+    justify-content: space-between; /* Maintient l'espace entre les colonnes */
+}
+
+.slide6 .text-container {
+    margin-left: 20px; /* Ajoute de l'espace à gauche */
+    margin-right: 0; /* Supprime tout espace inutile à droite */
+}
+
+.slide6 .images-container {
+    margin-right: 20px; /* Ajoute de l'espace à droite */
+    margin-left: 0; /* Supprime tout espace inutile à gauche */
+}
+
 .slide1{
     background: linear-gradient(454deg, #392e5e, #9553ff)
 }
@@ -134,4 +149,8 @@
 
 .slide5{
     background: linear-gradient(454deg, #440000, #9b0000)
+}
+
+.slide6{
+    background: linear-gradient(454deg, #c40093, #8b0156)
 }
