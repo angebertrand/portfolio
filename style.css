@@ -75,12 +75,79 @@
     margin-right: 100px; /* Ajoute un espace entre le texte et le bord droit */
 }
 
+/* Style de la section générale */
+.sliders.slide0 {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Conteneur des colonnes */
+.about-columns {
+    display: flex; /* Active Flexbox */
+    gap: 200px; /* Espace entre les colonnes */
+    align-items: stretch; /* Étire les colonnes pour qu'elles aient la même hauteur */
+    justify-content: space-between; /* Répartit uniformément les colonnes */
+    margin-top: 20px;
+}
+
+/* Style des colonnes */
+.about-links,
+.about-skills {
+    flex: 1; /* Chaque colonne prend une largeur égale */
+    background: rgba(255, 255, 255, 0.1); /* Fond semi-transparent */
+    padding: 50px;
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Optionnel : ombre portée */
+}
+
+/* Style des titres */
+.about-links h2,
+.about-skills h2 {
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-size: 1.5em;
+}
+
+/* Style des listes */
+.about-links ul,
+.about-skills ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.about-links li,
+.about-skills li {
+    margin-bottom: 10px;
+    word-wrap: break-word; /* Gère les mots longs */
+}
+
+/* Style des liens */
+.about-links a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.about-links a:hover {
+    color: #00ff22;
+}
+
 
 
 .sliders h2 {
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 600;
-    max-width: 650px;
+    max-width: 1000px;
+    text-align: center;
+    margin: 0; 
+    padding-bottom: 75px; /* Ajoute un peu d'espace au-dessus du titre */
+}
+
+.sliders h3 {
+    font-size: 80px;
+    font-weight: 600;
+    max-width: 1000px;
     text-align: center;
     margin: 0; 
     padding-bottom: 75px; /* Ajoute un peu d'espace au-dessus du titre */
@@ -132,7 +199,11 @@
 }
 
 .slide1{
-    background: linear-gradient(454deg, #392e5e, #9553ff)
+    background: linear-gradient(454deg, #2f254d, #9553ff)
+}
+
+.slide0{
+    background: linear-gradient(454deg, #00028d, #002a79)
 }
 
 .slide2{
@@ -153,4 +224,10 @@
 
 .slide6{
     background: linear-gradient(454deg, #c40093, #8b0156)
+}
+
+@media (max-width: 768px) {
+    .about-columns {
+        flex-direction: column; /* Empile les colonnes en vertical */
+    }
 }
