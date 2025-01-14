@@ -9,11 +9,22 @@
     <link rel="icon" href="./img/icon.ico" type="image/x-icon">
   </head>
   <body>
+    <div class="navbar">
+        <ul>
+          <li><a href="#slide1">Accueil</a></li>
+          <li><a href="#slide0">À propos</a></li>
+          <li><a href="#slide2">Wankil Studio</a></li>
+          <li><a href="#slide3">Don't Get Caught</a></li>
+          <li><a href="#slide4">Jewels of Destiny</a></li>
+          <li><a href="#slide5">Forward</a></li>
+          <li><a href="#slide6">Mentions Honorables</a></li>
+        </ul>
+      </div>
     <main>
        
         <div class="container">
             <!-- Slider 1 -->
-            <div class="sliders slide1">
+            <div class="sliders slide1" id="slide1">
                 <h2> Bienvenue dans le portfolio de </h2>
                 <h3> Ange Bertrand</h3>
                   
@@ -22,7 +33,7 @@
             
             <!-- Slider 0 -->
 
-            <div class="sliders slide0">
+            <div class="sliders slide0" id="slide0">
                 <h3>À propos de moi</h3>
                 <div class="about-columns">
                     <!-- Colonne des liens -->
@@ -44,6 +55,7 @@
                             <li>Unreal Engine >> Blueprint</li>
                             <li>Base de Unity >> C#</li>
                             <li>Blender</li>
+                            <li>Photoshop</li>
                         </ul>
                     </div>
                 </div>
@@ -51,7 +63,7 @@
             
            
             <!-- Slider 2 -->
-            <div class="sliders slide2">
+            <div class="sliders slide2" id="slide2">
                 <h2> Un jeu Wankil Studio pas du tout horrifique</h2>
                 <div class="content">
                     <div class="images-container">
@@ -76,9 +88,7 @@
                     </div>
                     <div class="text-container">
                         <p>
-                          Ce jeu est donc un fangame d'horreur-humoristique pour la chaîne "Wankil Studio - Laink et Terracid". Il est fait via Unreal Engine 5.4.3 en utilisant seulement des Blueprints. Je fus tout seul,
-                          j'ai fait les bruits de pas, une partie de la musique, les deux animations de "jumpscare" ci-contre via Blender (avec Blender toujours, j'ai aussi fait de la modélisation 3D afin de modifier
-                          les modèles 3D originaux pour les transformer en "monstre") <br>
+                          Ce jeu est donc un fangame d'horreur-humoristique  via Unreal Engine 5.4.3 en utilisant seulement des Blueprints. 
                           Il est téléchargable via <a href="https://gamejolt.com/games/Wankil_fangame/928470" target="_blank">Gamejolt</a>
                         </p>
                     </div>
@@ -86,7 +96,7 @@
             </div>
               
             <!-- Slider 3 -->
-            <div class="sliders slide3">
+            <div class="sliders slide3" id="slide3">
                 <h2>Don't Get Caught</h2>
                 <div class="content">
                     <div class="images-container">
@@ -104,8 +114,7 @@
                         <p>
                           Jeu d'infiltration die-and-retry fait sur Unreal Engine 5.2.1 en Blueprint trouvable <a href="https://tigrouto.itch.io/dont-get-caught" target="_blank">ici</a> sur Itch.io. <br>
                           Créé pour le GameJam : <a href="https://itch.io/jam/games-for-blind-gamers-3" target="_blank">Games for Blind Gamers 3</a>, se concentrant sur l'accessibilité des personnes 
-                          mal-voyantes voire non-voyantes, le principe est simple : vous êtes un robot qui doit obéir et récupérer des documents sans se faire repérer
-                           par d'autres robots. MAIS, vous êtes le premier robot à être conçu sans caméra pour éviter toute distraction.
+                          mal-voyantes voire non-voyantes.
                         </p>
                         <p>J'ai fini <a href="https://itch.io/jam/games-for-blind-gamers-3/results" target="_blank">19ème sur 26</a>.</p>
                     </div>
@@ -114,7 +123,7 @@
             
              <!-- Slider 4 -->
 
-            <div class="sliders slide4">
+            <div class="sliders slide4" id="slide4">
               <h2>The Jewels of Destiny</h2>
               <div class="content">
                   <div class="images-container">
@@ -143,7 +152,7 @@
                         <br>
                   <p>
                         
-                          Je n'ai pas eu de prix (ce n'est pas la communauté qui votait mais des juges, donc un gagnant par catégorie) mais je suis quand même fier de ce que j'ai fait et de ce que j'ai appris.</p>
+                          Je n'ai pas eu de prix (ce n'est pas la communauté qui votait mais des juges, donc un gagnant par catégorie)</p>
                       </p>
                      
                   </div>
@@ -152,7 +161,7 @@
         
          <!-- Slider 5 -->
 
-         <div class="sliders slide5">
+         <div class="sliders slide5" id="slide5">
             <h2>Forward.</h2>
             <div class="content">
                 <div class="images-container">
@@ -183,13 +192,11 @@
                 </div>
                 
                 <div class="text-container">
-                    <p>Là aussi, le principe est simple : aller tout droit, tout simplement, sans possibilité de revenir en arrière</p>
-                    <p>Je suis très fier d'avoir pu réaliser ce que j'imaginais à la base.</p>
+                    <p>Jeu d'horreur psychologique </p>
                     <p>Fait encore une fois en Blueprint avec Unreal Engine 5.3.2</p>
                     <p>Trouvable sur <a href="https://tigrouto.itch.io/forward" target="_blank">Itch.io</a> et sur <a href="https://gamejolt.com/games/forward/846988" target="_blank">Gamejolt</a> 
                         et le teaser sur <a href="https://www.youtube.com/watch?v=dHc4ctAjErk" target="_blank">YouTube</a> (ou ci-contre)</p>
-                    <p>Comme il n'est lié à aucun GameJam, il est resté plutôt inaperçu, mais cela m'a permis de jouer avec les codes puisqu'il est impossible d'utiliser la souris et de bouger autrement que
-                        tout droit et très lentement afin d'enfermer le joueur et qu'il se méfie de tout.   </p>
+                    <p>Comme il n'est lié à aucun GameJam, il est resté plutôt inaperçu. </p>
                    
                 </div>
             </div>
@@ -197,7 +204,7 @@
 
         <!-- Slider 6 -->
 
-        <div class="sliders slide6">
+        <div class="sliders slide6" id="slide6">
             <h2>Mentions honorables</h2>
             <div class="content">
                 <div class="images-container">
