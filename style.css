@@ -203,6 +203,21 @@
     margin-right: 20px; /* Ajoute de l'espace à droite */
     margin-left: 0; /* Supprime tout espace inutile à gauche */
 }
+.slide7 .content {
+    flex-direction: row-reverse; /* Change l'ordre des colonnes */
+    justify-content: space-between; /* Maintient l'espace entre les colonnes */
+}
+
+.slide7 .text-container {
+    margin-left: 20px; /* Ajoute de l'espace à gauche */
+    margin-right: 0; /* Supprime tout espace inutile à droite */
+}
+
+.slide7 .images-container {
+    margin-right: 20px; /* Ajoute de l'espace à droite */
+    margin-left: 0; /* Supprime tout espace inutile à gauche */
+}
+
 
 .slide1{
     background: linear-gradient(454deg, #2f254d, #9553ff)
