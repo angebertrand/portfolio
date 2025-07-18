@@ -204,28 +204,18 @@
     margin-left: 0; /* Supprime tout espace inutile à gauche */
 }
 .slide7 .content {
-  display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  align-items: flex-start;
-  width: 90%; /* ✅ Important : évite le débordement */
-  max-width: 1400px; /* optionnel pour écran large */
-  margin: 0 auto; /* centre le contenu horizontalement */
 }
 
 .slide7 .text-container {
-  width: 30%;
   margin-left: 20px;
   margin-right: 0;
 }
 
 .slide7 .images-container {
-  width: 65%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  justify-items: center;
-  align-items: start;
+  margin-right: 20px;
+  margin-left: 0;
 }
 
 .slide1{
