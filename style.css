@@ -47,6 +47,12 @@
     margin-left: 20px;
 }
 
+.image-item.slide7-image img {
+    width: 200px;
+    height: 442px;
+    object-fit: cover;
+}
+
 .image-item {
     display: flex;
     flex-direction: column;
