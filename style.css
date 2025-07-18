@@ -218,6 +218,12 @@
   margin-left: 0;
 }
 
+.slide7 .image-item img {
+  width: 225px;  
+  height:442px;   
+  object-fit: cover;
+}
+
 .slide1{
     background: linear-gradient(454deg, #2f254d, #9553ff)
 }
