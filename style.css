@@ -214,10 +214,13 @@
 }
 
 .slide7 .images-container {
-    margin-right: 20px; /* Ajoute de l'espace à droite */
-    margin-left: 0; /* Supprime tout espace inutile à gauche */
+  width: 65%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+  align-items: start;
 }
-
 
 .slide1{
     background: linear-gradient(454deg, #2f254d, #9553ff)
