@@ -219,9 +219,10 @@
 }
 
 .slide7 .image-item img {
-  width: 225px;  
-  height:442px;   
-  object-fit: cover;
+  width: 200px;
+  height: 442px;
+  object-fit: contain; /* ✅ évite de couper l’image */
+  display: block;
 }
 
 .slide1{
