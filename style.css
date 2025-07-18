@@ -204,13 +204,19 @@
     margin-left: 0; /* Supprime tout espace inutile à gauche */
 }
 .slide7 .content {
-    flex-direction: row-reverse; /* Change l'ordre des colonnes */
-    justify-content: space-between; /* Maintient l'espace entre les colonnes */
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 90%; /* ✅ Important : évite le débordement */
+  max-width: 1400px; /* optionnel pour écran large */
+  margin: 0 auto; /* centre le contenu horizontalement */
 }
 
 .slide7 .text-container {
-    margin-left: 20px; /* Ajoute de l'espace à gauche */
-    margin-right: 0; /* Supprime tout espace inutile à droite */
+  width: 30%;
+  margin-left: 20px;
+  margin-right: 0;
 }
 
 .slide7 .images-container {
