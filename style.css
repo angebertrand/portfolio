@@ -221,6 +221,21 @@
   display: block;
 }
 
+.slide8 .content {
+    flex-direction: row-reverse; /* Change l'ordre des colonnes */
+    justify-content: space-between; /* Maintient l'espace entre les colonnes */
+}
+
+.slide8 .text-container {
+    margin-left: 20px; /* Ajoute de l'espace à gauche */
+    margin-right: 0; /* Supprime tout espace inutile à droite */
+}
+
+.slide8 .images-container {
+    margin-right: 20px; /* Ajoute de l'espace à droite */
+    margin-left: 0; /* Supprime tout espace inutile à gauche */
+}
+
 .slide1{
     background: linear-gradient(454deg, #2f254d, #9553ff)
 }
@@ -252,6 +267,10 @@
 
 .slide6{
     background: linear-gradient(454deg, #c40093, #8b0156)
+}
+
+.slide8{
+    background: linear-gradient(454deg, #a2b30a, #2b9900)
 }
 
 @media (max-width: 768px) {
