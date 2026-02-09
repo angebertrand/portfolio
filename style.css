@@ -1,314 +1,150 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-    
+/* ----- RESET ----- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: Arial, sans-serif;
 }
 
-.container{
-    width: 100%;
-    height: 100vh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
+body {
+  background: #0d0d0d;
+  color: white;
 }
 
-.sliders {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column; /* Empile le titre et le contenu verticalement */
-    align-items: center; /* Centre le titre horizontalement */
-    justify-content: center; /* Centre verticalement les enfants */
-    color: #fff;
-    scroll-snap-align: start;
-    gap: 20px; /* Espace entre le titre et le contenu */
-}
-
-.sliders img{
-    width: 150px
-}
-
-
-.content {
-    display: flex; /* Utilise Flexbox pour aligner les images à gauche et le texte à droite */
-    justify-content: space-between; /* Sépare les images et le texte */
-    align-items: flex-start; /* Aligne les éléments en haut */
-    width: 100%; /* Prend toute la largeur disponible */
-    gap: 20px; /* Espace entre les colonnes */
-}
-
-
-.images-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Deux colonnes pour les images */
-    grid-gap: 20px;
-    flex: 0 0 auto;
-    margin-left: 20px;
-}
-
-
-
-.image-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centre les images et le texte */
-}
-
-.image-item img {
-    width: 350px;
-}
-
-.image-text {
-    margin-top: 10px; /* Espace entre l'image et le texte */
-    font-size: 14px;
-    color: #fff; /* Couleur du texte */
-    text-align: center; /* Centrer le texte sous l'image */
-}
-
-
-.text-container {
-    width: 30%; /* Fixe la largeur de la zone de texte */
-    align-self: flex-start; /* Positionne le texte en haut à droite */
-    padding: 20px; /* Ajoute un peu d'espace autour du texte */
-    background: rgba(255, 255, 255, 0.1); /* Fond semi-transparent (optionnel) */
-    border-radius: 10px; /* Arrondit les bords du conteneur de texte */
-    text-align: left; /* Aligne le texte à gauche */
-    margin-right: 100px; /* Ajoute un espace entre le texte et le bord droit */
-}
-
-/* Style de la section générale */
-.sliders.slide0 {
-    padding: 20px;
-    font-family: Arial, sans-serif;
-}
-
-/* Conteneur des colonnes */
-.about-columns {
-    display: flex; /* Active Flexbox */
-    gap: 200px; /* Espace entre les colonnes */
-    align-items: stretch; /* Étire les colonnes pour qu'elles aient la même hauteur */
-    justify-content: space-between; /* Répartit uniformément les colonnes */
-    margin-top: 20px;
-}
-
-/* Style des colonnes */
-.about-links,
-.about-skills {
-    flex: 1; /* Chaque colonne prend une largeur égale */
-    background: rgba(255, 255, 255, 0.1); /* Fond semi-transparent */
-    padding: 50px;
-    border-radius: 8px; /* Coins arrondis */
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Optionnel : ombre portée */
-}
-
-/* Style des titres */
-.about-links h2,
-.about-skills h2 {
-    margin-bottom: 15px;
-    color: #ffffff;
-    font-size: 1.5em;
-}
-
-/* Style des listes */
-.about-links ul,
-.about-skills ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.about-links li,
-.about-skills li {
-    margin-bottom: 10px;
-    word-wrap: break-word; /* Gère les mots longs */
-}
-
-/* Style des liens */
-.about-links a {
-    color: #007bff;
-    text-decoration: none;
-    transition: color 0.2s ease-in-out;
-}
-
-.about-links a:hover {
-    color: #00ff22;
-}
-
-
-
-.sliders h2 {
-    font-size: 60px; /* Taille de la police */
-    font-weight: 600; /* Poids du texte */
-    max-width: 90%; /* Largeur maximale élargie */
-    text-align: center; /* Centre le texte horizontalement */
-    margin: 0 auto; /* Centre l'élément dans son conteneur */
-    padding: 20px 0; /* Ajoute de l'espace vertical autour */
-}
-
-.sliders h3 {
-    font-size: 80px;
-    font-weight: 600;
-    max-width: 1000px;
-    text-align: center;
-    margin: 0; 
-    padding-bottom: 75px; /* Ajoute un peu d'espace au-dessus du titre */
-}
-
-.slide3 .content {
-    flex-direction: row-reverse; /* Change l'ordre des colonnes */
-    justify-content: space-between; /* Maintient l'espace entre les colonnes */
-}
-
-.slide3 .text-container {
-    margin-left: 20px; /* Ajoute de l'espace à gauche */
-    margin-right: 0; /* Supprime tout espace inutile à droite */
-}
-
-.slide3 .images-container {
-    margin-right: 20px; /* Ajoute de l'espace à droite */
-    margin-left: 0; /* Supprime tout espace inutile à gauche */
-}
-
-.slide4 .content {
-    flex-direction: row-reverse; /* Change l'ordre des colonnes */
-    justify-content: space-between; /* Maintient l'espace entre les colonnes */
-}
-
-.slide4 .text-container {
-    margin-left: 20px; /* Ajoute de l'espace à gauche */
-    margin-right: 0; /* Supprime tout espace inutile à droite */
-}
-
-.slide4 .images-container {
-    margin-right: 20px; /* Ajoute de l'espace à droite */
-    margin-left: 0; /* Supprime tout espace inutile à gauche */
-}
-
-.slide6 .content {
-    flex-direction: row-reverse; /* Change l'ordre des colonnes */
-    justify-content: space-between; /* Maintient l'espace entre les colonnes */
-}
-
-.slide6 .text-container {
-    margin-left: 20px; /* Ajoute de l'espace à gauche */
-    margin-right: 0; /* Supprime tout espace inutile à droite */
-}
-
-.slide6 .images-container {
-    margin-right: 20px; /* Ajoute de l'espace à droite */
-    margin-left: 0; /* Supprime tout espace inutile à gauche */
-}
-.slide7 .content {
-  flex-direction: row-reverse;
-  justify-content: space-between;
-}
-
-.slide7 .text-container {
-  margin-left: 40px;
-  margin-right: 0;
-}
-
-.slide7 .images-container {
-  margin-right: 350px;
-  margin-left: 0;
-}
-
-.slide7 .image-item img {
-  width: 200px;
-  height: 445px;
-  object-fit: contain; /* ✅ évite de couper l’image */
-  display: block;
-}
-
-.slide8 .content {
-    flex-direction: row-reverse; /* Change l'ordre des colonnes */
-    justify-content: space-between; /* Maintient l'espace entre les colonnes */
-}
-
-.slide8 .text-container {
-    margin-left: 20px; /* Ajoute de l'espace à gauche */
-    margin-right: 0; /* Supprime tout espace inutile à droite */
-}
-
-.slide8 .images-container {
-    margin-right: 20px; /* Ajoute de l'espace à droite */
-    margin-left: 0; /* Supprime tout espace inutile à gauche */
-}
-
-.slide1{
-    background: linear-gradient(454deg, #2f254d, #9553ff)
-}
-
-.slide0{
-    background: linear-gradient(454deg, #00028d, #002a79)
-}
-
-.slide2{
-    background: linear-gradient(454deg, #bbc900, #0e5ae7)
-}
-
-.slide7{
-    background: linear-gradient(454deg, #e17800, #ba8800)
-}
-
-
-.slide5{
-    background: linear-gradient(454deg, #161616, #000000)
-}
-
-.slide4{
-    background: linear-gradient(454deg, #01721d, #00b600)
-}
-
-.slide3{
-    background: linear-gradient(454deg, #440000, #9b0000)
-}
-
-.slide6{
-    background: linear-gradient(454deg, #c40093, #8b0156)
-}
-
-.slide8{
-    background: linear-gradient(454deg, #a2b30a, #2b9900)
-}
-
-@media (max-width: 768px) {
-    .about-columns {
-        flex-direction: column; /* Empile les colonnes en vertical */
-    }
-}
-
+/* ----- NAVBAR ----- */
 .navbar {
-    position: fixed; /* Fixe la barre en haut */
-    top: 0; /* Positionne en haut */
-    left: 0;
-    width: 100%; /* Prend toute la largeur de l'écran */
-    background: rgba(0, 0, 0, 0.8); /* Fond semi-transparent */
-    padding: 10px 20px;
-    z-index: 1000; /* Assure que la barre reste au-dessus des sliders */
-    display: flex;
-    justify-content: center; /* Centrer les liens */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(15, 15, 15, 0.85);
+  padding: 15px 0;
+  border-bottom: 1px solid #ffffff22;
+  z-index: 100;
+  backdrop-filter: blur(8px);
 }
 
 .navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 15px; /* Espacement entre les liens */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
 }
 
-.navbar li {
-    margin: 0;
+.navbar ul li a {
+  text-decoration: none;
+  color: #ddd;
+  font-weight: 600;
+  transition: 0.2s;
 }
 
-.navbar a {
-    text-decoration: none;
-    color: white; /* Couleur par défaut */
-    font-weight: bold;
-    font-size: 16px;
-    transition: color 0.3s ease; /* Transition douce pour le changement de couleur */
+.navbar ul li a:hover {
+  color: #00aaff;
 }
 
-.navbar a:hover {
-    color: #ffcc00; /* Couleur du texte au survol */
+/* ----- MAIN SECTION WRAPPER ----- */
+.container {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-top: 120px;
+}
+
+/* ----- SLIDES ----- */
+.sliders {
+  padding: 80px 0;
+  min-height: 100vh;
+  border-bottom: 1px solid #ffffff22;
+}
+
+.sliders h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sliders h3 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* ----- ABOUT SECTION ----- */
+.about-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.about-columns h2 {
+  margin-bottom: 20px;
+}
+
+.about-columns ul li {
+  margin: 8px 0;
+}
+
+.about-links a {
+  color: #00aaff;
+  text-decoration: none;
+}
+
+.about-links a:hover {
+  text-decoration: underline;
+}
+
+/* ----- IMAGE GRID ----- */
+.images-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.image-item {
+  text-align: center;
+}
+
+.image-item img,
+.image-item iframe {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.image-text {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+/* ----- TEXT BLOCK ----- */
+.text-container {
+  margin-top: 35px;
+  padding: 20px;
+  border-left: 3px solid #00aaff;
+  background: #ffffff08;
+  border-radius: 8px;
+}
+
+.text-container p {
+  margin: 10px 0;
+  line-height: 1.5rem;
+}
+
+/* ----- MOBILE RESPONSIVE ----- */
+@media (max-width: 768px) {
+  .navbar ul {
+    gap: 12px;
+    font-size: 0.85rem;
+  }
+
+  .sliders h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-columns {
+    flex-direction: column;
+  }
 }
