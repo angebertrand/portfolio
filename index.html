@@ -4,96 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
 
-    body {
-      background: #f5f5f5;
-      color: #222;
-      line-height: 1.6;
-    }
-
-    header {
-      background: #111;
-      color: #fff;
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      opacity: 0.8;
-    }
-
-    section {
-      max-width: 900px;
-      margin: 40px auto;
-      background: white;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    }
-
-    h2 {
-      margin-bottom: 20px;
-      font-size: 2rem;
-      padding-left: 10px;
-    }
-
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: #fafafa;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-      transition: transform 0.2s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      opacity: 0.6;
-    }
-  
-/* Remove decorative line on h2 */
-h2::before { content: none !important; }
-
-/* Center scroll-down gif */
-.scroll-down {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    width: 100% !important;
-    margin: 40px 0 !important;
-}
-</style>
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+    <!-- NAVBAR -->
     <div class="navbar">
         <ul>
           <li><a href="#slide1">Accueil</a></li>
           <li><a href="#slide0">À propos</a></li>
-          <li><a href="#slide8">Projet \"Slash\"</a></li>
+          <li><a href="#slide8">Projet "Slash"</a></li>
           <li><a href="#slide2">Wankil Studio</a></li>
           <li><a href="#slide7">First War</a></li>
           <li><a href="#slide3">Forward</a></li>
@@ -101,174 +23,234 @@ h2::before { content: none !important; }
           <li><a href="#slide5">Don't Get Caught</a></li>
           <li><a href="#slide6">Mentions Honorables</a></li>
         </ul>
-      </div>
+    </div>
+
     <main>
         <div class="container">
+
+            <!-- SLIDE 1 — ACCUEIL -->
             <div class="sliders slide1" id="slide1">
-                <h2> Bienvenue dans le portfolio de </h2>
-                <h3> Ange BERTRAND</h3>
-                <img src="img/scroll-down.gif" class="scroll-down">          
+                <h2>Bienvenue dans le portfolio de</h2>
+                <h3>Ange BERTRAND</h3>
+                <img src="img/scroll-down.gif" class="scroll-down">
             </div>
+
+            <!-- SLIDE 0 — ABOUT -->
             <div class="sliders slide0" id="slide0">
                 <h3>À propos de moi</h3>
+
                 <div class="about-columns">
+
                     <div class="about-links">
                         <h2>Liens</h2>
-                        <ul>
-                            <li><a href="https://github.com/angebertrand" target="_blank">GitHub</a></li>
-                            <li><a href="https://www.linkedin.com/in/ange-bertrand/" target="_blank">LinkedIn</a></li>                        
-                            <li><a href="https://tigrouto.itch.io/" target="_blank">Itch.io</a></li>
-                            <li><a href="https://gamejolt.com/@Tigrouto207" target="_blank">Gamejolt</a></li>
-                            <li><a href="mailto:ange.bertrand207@gmail.com">Mail pro</a></li>
-                            <li><a href="https://drive.google.com/file/d/1d7zyYSKnRWwCoq8aZG82O9h1YViDU2BX/view?usp=sharing" target="_blank">CV</a></li>
-                        </ul>
+                        <div class="text-container">
+                            <ul>
+                                <li><a href="https://github.com/angebertrand" target="_blank">GitHub</a></li>
+                                <li><a href="https://www.linkedin.com/in/ange-bertrand/" target="_blank">LinkedIn</a></li>
+                                <li><a href="https://tigrouto.itch.io/" target="_blank">Itch.io</a></li>
+                                <li><a href="https://gamejolt.com/@Tigrouto207" target="_blank">Gamejolt</a></li>
+                                <li><a href="mailto:ange.bertrand207@gmail.com">Mail pro</a></li>
+                                <li><a href="https://drive.google.com/file/d/1d7zyYSKnRWwCoq8aZG82O9h1YViDU2BX/view?usp=sharing" target="_blank">CV</a></li>
+                            </ul>
+                        </div>
                     </div>
+
                     <div class="about-skills">
                         <h2>Compétences</h2>
-                        <ul>
-                            <li>Bonne maîtrise d'Unreal Engine >> C++ ; Blueprint</li>
-                            <li>Base de Unity >> C#</li>
-                            <li>Blender</li>
-                            <li>Photoshop</li>
-                            <li>Base de Godot</li>
-                            <li>FLStudio</li>
-                        </ul>
+                        <div class="text-container">
+                            <ul>
+                                <li>Bonne maîtrise d'Unreal Engine → C++ ; Blueprint</li>
+                                <li>Base de Unity → C#</li>
+                                <li>Blender</li>
+                                <li>Photoshop</li>
+                                <li>Base de Godot</li>
+                                <li>FLStudio</li>
+                            </ul>
+                        </div>
                     </div>
+
                 </div>
             </div>
 
+            <!-- SLIDE 8 — SLASH -->
             <div class="sliders slide8" id="slide8">
-              <h2>Projet \"Slash\"</h2>
+              <h2>Projet "Slash"</h2>
+              
               <div class="content">
+                  
                   <div class="images-container">
                       <div class="image-item">
-                          <img src="./img/slash2.gif" alt="Image 1">
-                          <p class="image-text"> Contrôle d'un oiseau (réalisé en C++) </p>
+                          <img src="./img/slash2.gif">
+                          <p class="image-text">Contrôle d'un oiseau (réalisé en C++)</p>
                       </div>
+
                       <div class="image-item">
-                          <img src="./img/slash1.png" alt="Image 2">
+                          <img src="./img/slash1.png">
                           <p class="image-text">Grande carte du jeu (vue du ciel)</p>
                       </div>
+
                       <div class="image-item">
-                        <img src="./img/slash3.gif" alt="Image 1">
-                        <p class="image-text">Mécaniques principales du jeu (réalisés en C++ ; hors animations (Animation Blueprint))</p>
-                    </div>
-                    <div class="image-item">
-                        <img src="./img/slash4.gif" alt="Image 2">
-                        <p class="image-text">Utilisation de cinématique inverse (inverse kinematics) pour repositioner les jambes lors de pentes.</p>
-                    </div>
+                        <img src="./img/slash3.gif">
+                        <p class="image-text">Mécaniques principales du jeu (C++)</p>
+                      </div>
+
+                      <div class="image-item">
+                        <img src="./img/slash4.gif">
+                        <p class="image-text">Ciné inversée (IK) pour pentes</p>
+                      </div>
                   </div>
 
                   <div class="text-container">
-                      <p>- Jeu open-world souls-like, toujours en cours de création, créé en suivant la formation : \"Unreal Engine 5 C++ The Ultimate Game Developer Course\" par Stephen Ulibarri sur Udemy. </p>
-                      <p>- Réalisé entièrement seul</p>
-                      <p>- Unreal Engine 5.6 -> majoritairement en C++ mais aussi Blueprint </p>
-                      <p>- Commencé mi-août 2025</p>
+                      <p>- Souls-like open-world (en cours)</p>
+                      <p>- Réalisé seul</p>
+                      <p>- UE 5.6 (C++ + Blueprint)</p>
+                      <p>- Début : août 2025</p>
                   </div>
-              </div>
-          </div>
 
+              </div>
+            </div>
+
+            <!-- SLIDE 2 — WANKIL -->
             <div class="sliders slide2" id="slide2">
-                <h2> Un jeu Wankil Studio pas du tout horrifique</h2>
+                <h2>Un jeu Wankil Studio pas du tout horrifique</h2>
+
                 <div class="content">
+
                     <div class="images-container">
                         <div class="image-item"><img src="./img/laink1.gif"><p class="image-text">Jumpscare n°1</p></div>
                         <div class="image-item"><img src="./img/terra1.gif"><p class="image-text">Jumpscare n°2</p></div>
                         <div class="image-item"><img src="./img/laink2.gif"><p class="image-text">Début du jeu</p></div>
                         <div class="image-item"><img src="./img/anim1.gif"><p class="image-text">Suite du jeu</p></div>
                     </div>
+
                     <div class="text-container">
-                        <p>- Jeu fangame d’horreur-humouristique pour Wankil Studio.</p>
-                        <p>- Réalisé seul </p>
-                        <p>- Unreal Engine 5.4 ; FLStudio ; Blender (modèles + animations) </p>
-                        <p>- Entre 1 et 2 mois </p>
+                        <p>- Fangame horreur-humour</p>
+                        <p>- Réalisé seul</p>
+                        <p>- UE 5.4 ; FLStudio ; Blender</p>
+                        <p>- 1 à 2 mois</p>
                         <p>Disponible sur Gamejolt</p>
                     </div>
+
                 </div>
             </div>
 
+            <!-- SLIDE 7 — FIRST WAR -->
             <div class="sliders slide7" id="slide7">
               <h2>First War</h2>
+
               <div class="content">
                 <div class="images-container">
                   <div class="image-item"><img src="./img/fw_1.gif"><p class="image-text">Menu principal (BETA)</p></div>
                   <div class="image-item"><img src="./img/fw_2.gif"><p class="image-text">Gameplay (BETA)</p></div>
                 </div>
+
                 <div class="text-container">
-                  <p>- Jeu mobile Android toujours en cours</p>
+                  <p>- Jeu mobile Android (en cours)</p>
                   <p>- Unity C#, Blender, Photoshop, FLStudio</p>
                   <p>- Début : juillet 2025</p>
                 </div>
               </div>
             </div>
 
+            <!-- SLIDE 3 — FORWARD -->
             <div class="sliders slide3" id="slide3">
               <h2>Forward.</h2>
+
               <div class="content">
+
                 <div class="images-container">
                   <div class="image-item">
-                    <iframe width="350" height="200" src="https://www.youtube.com/embed/dHc4ctAjErk" allowfullscreen></iframe>
-                    <p class="image-text">Teaser du jeu </p>
+                    <iframe width="350" height="200"
+                      src="https://www.youtube.com/embed/dHc4ctAjErk"
+                      allowfullscreen></iframe>
+                    <p class="image-text">Teaser du jeu</p>
                   </div>
+
                   <div class="image-item"><img src="./img/forwa1.gif"><p class="image-text">Début du jeu</p></div>
                   <div class="image-item"><img src="./img/forwar2.gif"><p class="image-text">Forêt étrange</p></div>
                   <div class="image-item"><img src="./img/forwa3.gif"><p class="image-text">Fin énigmatique</p></div>
                 </div>
+
                 <div class="text-container">
-                  <p>- Jeu d'horreur psychologique </p>
+                  <p>- Jeu d'horreur psychologique</p>
                   <p>- Réalisé seul</p>
-                  <p>- Unreal Engine 5.3.2 </p>
+                  <p>- UE 5.3.2</p>
                   <p>- Disponible sur Itch.io / Gamejolt</p>
                 </div>
+
               </div>
             </div>
 
+            <!-- SLIDE 4 — JEWELS -->
             <div class="sliders slide4" id="slide4">
               <h2>The Jewels of Destiny</h2>
+
               <div class="content">
+
                 <div class="images-container">
                   <div class="image-item"><img src="./img/tci1.gif"><p>Choix du personnage</p></div>
                   <div class="image-item"><img src="./img/tci2.gif"><p>Tutoriel</p></div>
                   <div class="image-item"><img src="./img/tci3.gif"><p>Plateforme mouvante</p></div>
                   <div class="image-item"><img src="./img/tci4.gif"><p>Premier joyau</p></div>
                 </div>
+
                 <div class="text-container">
-                  <p>- Platformer die-and-retry créé pour Kenney Jam 2024</p>
+                  <p>- Platformer die-and-retry (Kenney Jam 2024)</p>
                   <p>- Assets Kenney ; UE 5.4 ; FLStudio</p>
                   <p>- 48h</p>
                 </div>
+
               </div>
             </div>
 
+            <!-- SLIDE 5 — DON'T GET CAUGHT -->
             <div class="sliders slide5" id="slide5">
               <h2>Don't Get Caught</h2>
+
               <div class="content">
                 <div class="images-container">
                   <div class="image-item"><img src="./img/dgc1.gif"><p>Menu</p></div>
                   <div class="image-item"><img src="./img/dontgetcaught.png"><p>Logo du jeu</p></div>
                 </div>
+
                 <div class="text-container">
-                  <p>- Jeu d'infiltration pour \"Games for Blind Gamers 3\"</p>
+                  <p>- Jeu d'infiltration (Games for Blind Gamers 3)</p>
                   <p>- UE 5.2.1</p>
                   <p>- 1 mois</p>
                 </div>
               </div>
             </div>
 
+            <!-- SLIDE 6 — HONORABLE -->
             <div class="sliders slide6" id="slide6">
               <h2>Mentions honorables</h2>
+
               <div class="content">
                 <div class="images-container">
                   <div class="image-item"><img src="./img/mario.gif"><p>Premier jeu Python</p></div>
                   <div class="image-item"><img src="./img/bird.gif"><p>Premier jeu Unity</p></div>
                 </div>
+
                 <div class="text-container">
                   <p>Jeux simples mais essentiels à ma progression</p>
                 </div>
               </div>
             </div>
+
         </div>
     </main>
+
+    <!-- LIGHTBOX POUR LES IMAGES -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <span class="arrow arrow-left">&#10094;</span>
+        <img id="lightbox-img" src="">
+        <div class="lightbox-text" id="lightbox-text"></div>
+        <span class="arrow arrow-right">&#10095;</span>
+    </div>
+
+    <!-- SCRIPT -->
     <script src="index.js"></script>
+
 </body>
 </html>
